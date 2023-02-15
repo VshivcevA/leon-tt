@@ -1,0 +1,14 @@
+.devushka {
+  position: absolute;
+  background-image: url('../img/devushka.png');
+  background-repeat: no-repeat;
+  width: 838px;
+  height: 765px;
+  top: 286px;
+  @media (max-width: $mobile) {
+    background-image: url('../img/devushka_mobile.png');
+    width: 410px;
+    height: 394px;
+    top: 419px;
+  }
+}

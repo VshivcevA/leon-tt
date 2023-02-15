@@ -1,0 +1,18 @@
+.wheel {
+  background-repeat: no-repeat;
+  background-image: url("../img/wheel/bg_wheel.png");
+  position: absolute;
+  width: 835px;
+  height: 835px;
+  left: 50%;
+  transform: translate(-50%,2%);
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  @media (max-width:$mobile) {
+    background-image: url("../img/wheel/bg_wheel_mobile.png");
+    width: 375px;
+    height: 402px;
+    left: 50%;
+  }
+}

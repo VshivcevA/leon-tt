@@ -1,0 +1,108 @@
+.popup {
+  position:fixed;
+  display:flex;
+  top: 0;
+  width:100%;
+  height:100%;
+  justify-content:center;
+  align-items:center;
+  background:$shadow;
+  z-index:100;
+  text-align:center;
+  font-family: 'Uni Sans',sans-serif;
+  font-style: normal;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  &__win {
+    background: url('../img/popup_win.png') no-repeat;
+    width: 651px;
+    height: 771px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-size: cover;
+    z-index: 101;
+    @media (max-width:$mobile) {
+      background: url('../img/popup_win_mobile.png') no-repeat;
+      height: 488px;
+      width: 375px;
+    }
+  }
+  &__lose {
+    background: url('../img/popup_lose.png') no-repeat;
+    width: 631px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-size: cover;
+    @media (max-width:$mobile) {
+      width: 375px;
+      height: 220px;
+      transform: translateX(2.5%)
+    }
+  }
+  &__title {
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 77px;
+    color: $yellow;
+    text-shadow: 0 0 10px $yellow;
+    @media (min-width: $mobile) {
+      font-size: 40px;
+      line-height: 48px;
+    }
+    &--lose {
+      font-size: 56px;
+      line-height: 67px;
+      max-width: 565px;
+      @media (max-width:$mobile) {
+        font-size: 26px;
+        line-height: 48px;
+      }
+    }
+  }
+  &__text {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    color: $white;
+    @media (max-width:$mobile) {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+  &__button {
+    position: relative;
+    bottom: -20px;
+    align-self: center;
+    width: 350px;
+    height: 90px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    box-sizing: border-box;
+    background: linear-gradient(180deg, #FEED7C 0%, #FFC54B 100%);
+    border-radius: 40px;
+    border: 2px solid $yellow;//todo
+    @media (max-width:$mobile) {
+      width: 218.41px;
+      height: 56.16px;
+      bottom: -5px;
+
+    }
+    &--lose {
+      left: -30px;
+      @media (max-width:$mobile) {
+        bottom: -15px;
+        font-size: 22px;
+      }
+    }
+  }
+  &__overlay {
+    position:absolute;
+    width:100%;
+    height:100%;
+    z-index:1;
+  }
+}

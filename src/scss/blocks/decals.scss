@@ -1,0 +1,12 @@
+.decals {
+  background: url('../img/decals.png');
+  position: absolute;
+  width: 1658px;
+  height: 921px;
+  left: -22px;
+  top: 130px;
+  z-index: -1;
+  @media (max-width:$mobile) {
+    display: none
+  }
+}

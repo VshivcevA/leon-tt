@@ -1,0 +1,37 @@
+.inner-circle {
+  background-repeat: no-repeat;
+  background-image: url("../img/wheel/innercircle.png");
+  //position: absolute;
+  width: 642px;
+  height: 642px;
+  transform: translate(-1%,-5%);
+  display: flex;
+  justify-content:center;
+  @media (max-width:$mobile) {
+    background-image: url("../img/wheel/innercircle_mobile.png");
+    width: 309px;
+    height: 309px;
+  }
+  &__plashka {
+    background: url("../img/wheel/plashka.png") no-repeat;
+    width: 260px;
+    height: 350px;
+    @media (max-width:$mobile) {
+      background: url("../img/wheel/plashka_mobile.png") no-repeat;
+      width: 125.17px;
+      height: 168.5px;
+    }
+  }
+  &__button {
+    background: url("../img/wheel/buttom.png") no-repeat;
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    align-self: center;
+    @media (max-width:$mobile) {
+      background: url("../img/wheel/buttom_mobile.png") no-repeat;
+      width: 67.4px;
+      height: 67.4px;
+    }
+  }
+}

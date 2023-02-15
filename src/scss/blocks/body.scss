@@ -1,0 +1,11 @@
+.body {
+  max-width: 1920px;
+  max-height: 1080px;
+  overflow: hidden;
+  position: relative;
+  background-repeat: no-repeat;
+  background-image: url('../img/bg_1920.jpg');
+  @media (max-width: $mobile) {
+    background-image: url('../img/bg_375.jpg');
+  }
+}
