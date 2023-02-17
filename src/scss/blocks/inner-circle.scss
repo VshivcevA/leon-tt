@@ -1,37 +1,21 @@
 .inner-circle {
-  background-repeat: no-repeat;
-  background-image: url("../img/wheel/innercircle.png");
-  //position: absolute;
-  width: 642px;
-  height: 642px;
-  transform: translate(-1%,-5%);
-  display: flex;
-  justify-content:center;
-  @media (max-width:$mobile) {
-    background-image: url("../img/wheel/innercircle_mobile.png");
-    width: 309px;
-    height: 309px;
-  }
+  background: url("../img/wheel/innercircle.png") no-repeat;
+  background-size: contain;
+  transform: translate(13%, 8%);
+  width: 78%;
+  height: 78%;
   &__plashka {
     background: url("../img/wheel/plashka.png") no-repeat;
-    width: 260px;
-    height: 350px;
-    @media (max-width:$mobile) {
-      background: url("../img/wheel/plashka_mobile.png") no-repeat;
-      width: 125.17px;
-      height: 168.5px;
-    }
+    background-size: contain;
+    transform: translateX(76%);
+    width: 40%;
+    height: 60%;
   }
   &__button {
     background: url("../img/wheel/buttom.png") no-repeat;
-    position: absolute;
-    width: 140px;
-    height: 140px;
-    align-self: center;
-    @media (max-width:$mobile) {
-      background: url("../img/wheel/buttom_mobile.png") no-repeat;
-      width: 67.4px;
-      height: 67.4px;
-    }
+    background-size: contain;
+    transform: translate(75%,-75%);
+    width: 40%;
+    height: 40%;
   }
 }

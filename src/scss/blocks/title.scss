@@ -11,7 +11,10 @@
   text-transform: uppercase;
   letter-spacing: 0.05em;
   &__logo {
-    margin-bottom: 29px;
+    background: url('../img/logo.png') no-repeat;
+    width:150px;
+    height:40px;
+    margin-bottom: 20px;
   }
   &__text {
     font-size: 32px;
